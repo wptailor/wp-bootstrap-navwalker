@@ -4,12 +4,12 @@
     "type": "wordpress-plugin",
     "license": "GPL-3.0+",
     "authors": [
-      {
-        "name": "Edward McIntyre"
-      },
-      {
-        "name": "Brandon Hubbard"
-      }
+        {
+            "name": "Edward McIntyre"
+        },
+        {
+            "name": "Brandon Hubbard"
+        }
     ],
     "require": {
       "composer/installers": "~1.0"
@@ -17,12 +17,15 @@
     "require-dev": {
         "stevegrunwell/wp-enforcer": "^0.4.1"
     },
+    "archive": {
+        "exclude": [".eslint*", ".jshint*", ".editorconfig", ".codeclimate.yml", "phpcs.xml"]
+    },
     "scripts": {
-      "post-install-cmd": [
-        "wp-enforcer"
-      ],
-      "post-update-cmd": [
-        "wp-enforcer"
-      ]
+        "post-install-cmd": [
+            "wp-enforcer"
+        ],
+        "post-update-cmd": [
+            "wp-enforcer"
+        ]
     }
 }
