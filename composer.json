@@ -18,7 +18,7 @@
         "stevegrunwell/wp-enforcer": "^0.4.1"
     },
     "archive": {
-        "exclude": [".eslint*", ".jshint*", ".editorconfig", ".codeclimate.yml", "phpcs.xml"]
+        "exclude": ["/.eslint*", "/.jshint*", "/.editorconfig", "/.codeclimate.yml", "/phpcs.xml"]
     },
     "scripts": {
         "post-install-cmd": [
